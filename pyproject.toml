@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "nsdepaturetimes"
+version = "0.1.0"
+description = "A dash webapp to show the actual depature times of trains and crowdedness in the Netherlands"
+authors = ["Yorick Fredrix <yorick.fredrix@outlook.com>"]
+license = "GNU General Public License v3.0"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+dash = "^2.3.1"
+urllib3 = "^1.26.9"
+pytz = "^2022.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.1.1"
+black = "^22.3.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

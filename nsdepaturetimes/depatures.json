@@ -1,0 +1,1460 @@
+{
+    "3665": {
+        "name": "NS  3665",
+        "depatureTime": "2022-04-09T19:15:00+0200",
+        "direction": "Roosendaal",
+        "track": "8",
+        "trainCategory": "IC",
+        "trainNumber": "3665",
+        "classifiction": "LOW",
+        "materieel": [
+            {
+                "materieelnummer": 7646,
+                "type": "DDZ 6",
+                "faciliteiten": [
+                    "WIFI",
+                    "TOILET",
+                    "STILTE",
+                    "STROOM",
+                    "FIETS"
+                ],
+                "afbeelding": "https://vt.ns-mlab.nl/v1/images/ddz_6.png",
+                "breedte": 3198,
+                "hoogte": 150,
+                "bakken": [
+                    {
+                        "afbeelding": {
+                            "url": "https://vt.ns-mlab.nl/v1/images/ddz_6/ddz_6_1.png",
+                            "breedte": 1098,
+                            "hoogte": 300
+                        }
+                    },
+                    {
+                        "afbeelding": {
+                            "url": "https://vt.ns-mlab.nl/v1/images/ddz_6/ddz_6_2.png",
+                            "breedte": 1104,
+                            "hoogte": 300
+                        }
+                    },
+                    {
+                        "afbeelding": {
+                            "url": "https://vt.ns-mlab.nl/v1/images/ddz_6/ddz_6_3.png",
+                            "breedte": 1104,
+                            "hoogte": 300
+                        }
+                    },
+                    {
+                        "afbeelding": {
+                            "url": "https://vt.ns-mlab.nl/v1/images/ddz_6/ddz_6_4.png",
+                            "breedte": 1104,
+                            "hoogte": 300
+                        }
+                    },
+                    {
+                        "afbeelding": {
+                            "url": "https://vt.ns-mlab.nl/v1/images/ddz_6/ddz_6_5.png",
+                            "breedte": 1104,
+                            "hoogte": 300
+                        }
+                    },
+                    {
+                        "afbeelding": {
+                            "url": "https://vt.ns-mlab.nl/v1/images/ddz_6/ddz_6_6.png",
+                            "breedte": 882,
+                            "hoogte": 300
+                        }
+                    }
+                ]
+            }
+        ],
+        "ingekort": false
+    },
+    "3670": {
+        "name": "NS  3670",
+        "depatureTime": "2022-04-09T19:20:00+0200",
+        "direction": "Zwolle",
+        "track": "3",
+        "trainCategory": "IC",
+        "trainNumber": "3670",
+        "classifiction": "LOW",
+        "materieel": [
+            {
+                "materieelnummer": 7502,
+                "type": "DDZ 4",
+                "faciliteiten": [
+                    "WIFI",
+                    "TOILET",
+                    "STILTE",
+                    "STROOM",
+                    "FIETS"
+                ],
+                "afbeelding": "https://vt.ns-mlab.nl/v1/images/ddz_4.png",
+                "breedte": 2095,
+                "hoogte": 150,
+                "bakken": [
+                    {
+                        "afbeelding": {
+                            "url": "https://vt.ns-mlab.nl/v1/images/ddz_4/ddz_4_1.png",
+                            "breedte": 1098,
+                            "hoogte": 300
+                        }
+                    },
+                    {
+                        "afbeelding": {
+                            "url": "https://vt.ns-mlab.nl/v1/images/ddz_4/ddz_4_2.png",
+                            "breedte": 1104,
+                            "hoogte": 300
+                        }
+                    },
+                    {
+                        "afbeelding": {
+                            "url": "https://vt.ns-mlab.nl/v1/images/ddz_4/ddz_4_3.png",
+                            "breedte": 1104,
+                            "hoogte": 300
+                        }
+                    },
+                    {
+                        "afbeelding": {
+                            "url": "https://vt.ns-mlab.nl/v1/images/ddz_4/ddz_4_4.png",
+                            "breedte": 884,
+                            "hoogte": 300
+                        }
+                    }
+                ]
+            }
+        ],
+        "ingekort": false
+    },
+    "1166": {
+        "name": "NS  1166",
+        "depatureTime": "2022-04-09T19:23:00+0200",
+        "direction": "Amsterdam Centraal",
+        "track": "7",
+        "trainCategory": "ICD",
+        "trainNumber": "1166",
+        "classifiction": "LOW",
+        "materieel": [
+            {
+                "type": "ELOC TR25",
+                "faciliteiten": [],
+                "afbeelding": "https://vt.ns-mlab.nl/v1/images/e-loc_tr25.png",
+                "breedte": 386,
+                "hoogte": 150,
+                "bakken": []
+            },
+            {
+                "materieelnummer": 16414,
+                "type": "SW7-25KV_2+7",
+                "faciliteiten": [
+                    "TOILET",
+                    "STROOM"
+                ],
+                "afbeelding": "https://vt.ns-mlab.nl/v1/images/icr_7.png",
+                "breedte": 3855,
+                "hoogte": 150,
+                "bakken": [
+                    {
+                        "afbeelding": {
+                            "url": "https://vt.ns-mlab.nl/v1/images/icr_7/icr_7_1.png",
+                            "breedte": 1100,
+                            "hoogte": 300
+                        }
+                    },
+                    {
+                        "afbeelding": {
+                            "url": "https://vt.ns-mlab.nl/v1/images/icr_7/icr_7_2.png",
+                            "breedte": 1106,
+                            "hoogte": 300
+                        }
+                    },
+                    {
+                        "afbeelding": {
+                            "url": "https://vt.ns-mlab.nl/v1/images/icr_7/icr_7_3.png",
+                            "breedte": 1104,
+                            "hoogte": 300
+                        }
+                    },
+                    {
+                        "afbeelding": {
+                            "url": "https://vt.ns-mlab.nl/v1/images/icr_7/icr_7_4.png",
+                            "breedte": 1104,
+                            "hoogte": 300
+                        }
+                    },
+                    {
+                        "afbeelding": {
+                            "url": "https://vt.ns-mlab.nl/v1/images/icr_7/icr_7_5.png",
+                            "breedte": 1106,
+                            "hoogte": 300
+                        }
+                    },
+                    {
+                        "afbeelding": {
+                            "url": "https://vt.ns-mlab.nl/v1/images/icr_7/icr_7_6.png",
+                            "breedte": 1104,
+                            "hoogte": 300
+                        }
+                    },
+                    {
+                        "afbeelding": {
+                            "url": "https://vt.ns-mlab.nl/v1/images/icr_7/icr_7_7.png",
+                            "breedte": 1086,
+                            "hoogte": 300
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "ELOC TR25",
+                "faciliteiten": [],
+                "afbeelding": "https://vt.ns-mlab.nl/v1/images/e-loc_tr25.png",
+                "breedte": 386,
+                "hoogte": 150,
+                "bakken": []
+            }
+        ],
+        "ingekort": false
+    },
+    "6668": {
+        "name": "NS  6668",
+        "depatureTime": "2022-04-09T19:23:00+0200",
+        "direction": "Nijmegen",
+        "track": "6",
+        "trainCategory": "SPR",
+        "trainNumber": "6668",
+        "classifiction": "LOW",
+        "materieel": [
+            {
+                "materieelnummer": 2518,
+                "type": "Flirt 4 FFF",
+                "faciliteiten": [
+                    "TOILET",
+                    "STROOM",
+                    "FIETS",
+                    "WIFI"
+                ],
+                "afbeelding": "https://vt.ns-mlab.nl/v1/images/nsr_flirt_4.png",
+                "breedte": 1759,
+                "hoogte": 150,
+                "bakken": [
+                    {
+                        "afbeelding": {
+                            "url": "https://vt.ns-mlab.nl/v1/images/nsr_flirt_4/nsr_flirt_4_1.png",
+                            "breedte": 988,
+                            "hoogte": 300
+                        }
+                    },
+                    {
+                        "afbeelding": {
+                            "url": "https://vt.ns-mlab.nl/v1/images/nsr_flirt_4/nsr_flirt_4_2.png",
+                            "breedte": 768,
+                            "hoogte": 300
+                        }
+                    },
+                    {
+                        "afbeelding": {
+                            "url": "https://vt.ns-mlab.nl/v1/images/nsr_flirt_4/nsr_flirt_4_3.png",
+                            "breedte": 768,
+                            "hoogte": 300
+                        }
+                    },
+                    {
+                        "afbeelding": {
+                            "url": "https://vt.ns-mlab.nl/v1/images/nsr_flirt_4/nsr_flirt_4_4.png",
+                            "breedte": 990,
+                            "hoogte": 300
+                        }
+                    }
+                ]
+            }
+        ],
+        "ingekort": false
+    },
+    "9259": {
+        "name": "NS Int  9259",
+        "depatureTime": "2022-04-09T19:26:00+0200",
+        "direction": "Amsterdam Centraal",
+        "track": "5",
+        "trainCategory": "ICD",
+        "trainNumber": "9259",
+        "classifiction": "UNKNOWN",
+        "materieel": [
+            {
+                "materieelnummer": 0,
+                "type": "SNG 4",
+                "faciliteiten": [
+                    "FIETS",
+                    "WIFI",
+                    "STROOM",
+                    "TOEGANKELIJK",
+                    "TOILET"
+                ],
+                "afbeelding": "https://vt.ns-mlab.nl/v1/images/sng_4.png",
+                "breedte": 1579,
+                "hoogte": 150,
+                "bakken": [
+                    {
+                        "afbeelding": {
+                            "url": "https://vt.ns-mlab.nl/v1/images/sng_4/sng_4_1.png",
+                            "breedte": 890,
+                            "hoogte": 300
+                        }
+                    },
+                    {
+                        "afbeelding": {
+                            "url": "https://vt.ns-mlab.nl/v1/images/sng_4/sng_4_2.png",
+                            "breedte": 690,
+                            "hoogte": 300
+                        }
+                    },
+                    {
+                        "afbeelding": {
+                            "url": "https://vt.ns-mlab.nl/v1/images/sng_4/sng_4_3.png",
+                            "breedte": 688,
+                            "hoogte": 300
+                        }
+                    },
+                    {
+                        "afbeelding": {
+                            "url": "https://vt.ns-mlab.nl/v1/images/sng_4/sng_4_4.png",
+                            "breedte": 890,
+                            "hoogte": 300
+                        }
+                    }
+                ]
+            }
+        ],
+        "ingekort": false
+    },
+    "1171": {
+        "name": "NS  1171",
+        "depatureTime": "2022-04-09T19:38:00+0200",
+        "direction": "Eindhoven Centraal",
+        "track": "3",
+        "trainCategory": "ICD",
+        "trainNumber": "1171",
+        "classifiction": "LOW",
+        "materieel": [
+            {
+                "materieelnummer": 0,
+                "type": "SNG 3",
+                "faciliteiten": [
+                    "FIETS",
+                    "WIFI",
+                    "STROOM",
+                    "TOEGANKELIJK",
+                    "TOILET"
+                ],
+                "afbeelding": "https://vt.ns-mlab.nl/v1/images/sng_3.png",
+                "breedte": 1234,
+                "hoogte": 150,
+                "bakken": [
+                    {
+                        "afbeelding": {
+                            "url": "https://vt.ns-mlab.nl/v1/images/sng_3/sng_3_1.png",
+                            "breedte": 890,
+                            "hoogte": 300
+                        }
+                    },
+                    {
+                        "afbeelding": {
+                            "url": "https://vt.ns-mlab.nl/v1/images/sng_3/sng_3_2.png",
+                            "breedte": 688,
+                            "hoogte": 300
+                        }
+                    },
+                    {
+                        "afbeelding": {
+                            "url": "https://vt.ns-mlab.nl/v1/images/sng_3/sng_3_3.png",
+                            "breedte": 890,
+                            "hoogte": 300
+                        }
+                    }
+                ]
+            }
+        ],
+        "ingekort": false
+    },
+    "6667": {
+        "name": "NS  6667",
+        "depatureTime": "2022-04-09T19:39:00+0200",
+        "direction": "Dordrecht",
+        "track": "6",
+        "trainCategory": "SPR",
+        "trainNumber": "6667",
+        "classifiction": "LOW",
+        "materieel": [
+            {
+                "materieelnummer": 2504,
+                "type": "Flirt 4 FFF",
+                "faciliteiten": [
+                    "TOILET",
+                    "STROOM",
+                    "FIETS",
+                    "WIFI"
+                ],
+                "afbeelding": "https://vt.ns-mlab.nl/v1/images/nsr_flirt_4.png",
+                "breedte": 1759,
+                "hoogte": 150,
+                "bakken": [
+                    {
+                        "afbeelding": {
+                            "url": "https://vt.ns-mlab.nl/v1/images/nsr_flirt_4/nsr_flirt_4_1.png",
+                            "breedte": 988,
+                            "hoogte": 300
+                        }
+                    },
+                    {
+                        "afbeelding": {
+                            "url": "https://vt.ns-mlab.nl/v1/images/nsr_flirt_4/nsr_flirt_4_2.png",
+                            "breedte": 768,
+                            "hoogte": 300
+                        }
+                    },
+                    {
+                        "afbeelding": {
+                            "url": "https://vt.ns-mlab.nl/v1/images/nsr_flirt_4/nsr_flirt_4_3.png",
+                            "breedte": 768,
+                            "hoogte": 300
+                        }
+                    },
+                    {
+                        "afbeelding": {
+                            "url": "https://vt.ns-mlab.nl/v1/images/nsr_flirt_4/nsr_flirt_4_4.png",
+                            "breedte": 990,
+                            "hoogte": 300
+                        }
+                    }
+                ]
+            }
+        ],
+        "ingekort": false
+    },
+    "9260": {
+        "name": "NS Int  9260",
+        "depatureTime": "2022-04-09T19:42:00+0200",
+        "direction": "Brussel-Zuid Midi",
+        "track": "7",
+        "trainCategory": "ICD",
+        "trainNumber": "9260",
+        "classifiction": "UNKNOWN",
+        "materieel": [
+            {
+                "type": "ELOC TR25",
+                "faciliteiten": [],
+                "afbeelding": "https://vt.ns-mlab.nl/v1/images/e-loc_tr25.png",
+                "breedte": 386,
+                "hoogte": 150,
+                "bakken": []
+            },
+            {
+                "materieelnummer": 16478,
+                "type": "SW7-25KV_2+7",
+                "faciliteiten": [
+                    "TOILET",
+                    "STROOM"
+                ],
+                "afbeelding": "https://vt.ns-mlab.nl/v1/images/icr_7.png",
+                "breedte": 3855,
+                "hoogte": 150,
+                "bakken": [
+                    {
+                        "afbeelding": {
+                            "url": "https://vt.ns-mlab.nl/v1/images/icr_7/icr_7_1.png",
+                            "breedte": 1100,
+                            "hoogte": 300
+                        }
+                    },
+                    {
+                        "afbeelding": {
+                            "url": "https://vt.ns-mlab.nl/v1/images/icr_7/icr_7_2.png",
+                            "breedte": 1106,
+                            "hoogte": 300
+                        }
+                    },
+                    {
+                        "afbeelding": {
+                            "url": "https://vt.ns-mlab.nl/v1/images/icr_7/icr_7_3.png",
+                            "breedte": 1104,
+                            "hoogte": 300
+                        }
+                    },
+                    {
+                        "afbeelding": {
+                            "url": "https://vt.ns-mlab.nl/v1/images/icr_7/icr_7_4.png",
+                            "breedte": 1104,
+                            "hoogte": 300
+                        }
+                    },
+                    {
+                        "afbeelding": {
+                            "url": "https://vt.ns-mlab.nl/v1/images/icr_7/icr_7_5.png",
+                            "breedte": 1106,
+                            "hoogte": 300
+                        }
+                    },
+                    {
+                        "afbeelding": {
+                            "url": "https://vt.ns-mlab.nl/v1/images/icr_7/icr_7_6.png",
+                            "breedte": 1104,
+                            "hoogte": 300
+                        }
+                    },
+                    {
+                        "afbeelding": {
+                            "url": "https://vt.ns-mlab.nl/v1/images/icr_7/icr_7_7.png",
+                            "breedte": 1086,
+                            "hoogte": 300
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "ELOC TR25",
+                "faciliteiten": [],
+                "afbeelding": "https://vt.ns-mlab.nl/v1/images/e-loc_tr25.png",
+                "breedte": 386,
+                "hoogte": 150,
+                "bakken": []
+            }
+        ],
+        "ingekort": false
+    },
+    "3667": {
+        "name": "NS  3667",
+        "depatureTime": "2022-04-09T19:45:00+0200",
+        "direction": "Roosendaal",
+        "track": "8",
+        "trainCategory": "IC",
+        "trainNumber": "3667",
+        "classifiction": "LOW",
+        "materieel": [
+            {
+                "materieelnummer": 7631,
+                "type": "DDZ 6",
+                "faciliteiten": [
+                    "WIFI",
+                    "TOILET",
+                    "STILTE",
+                    "STROOM",
+                    "FIETS"
+                ],
+                "afbeelding": "https://vt.ns-mlab.nl/v1/images/ddz_6.png",
+                "breedte": 3198,
+                "hoogte": 150,
+                "bakken": [
+                    {
+                        "afbeelding": {
+                            "url": "https://vt.ns-mlab.nl/v1/images/ddz_6/ddz_6_1.png",
+                            "breedte": 1098,
+                            "hoogte": 300
+                        }
+                    },
+                    {
+                        "afbeelding": {
+                            "url": "https://vt.ns-mlab.nl/v1/images/ddz_6/ddz_6_2.png",
+                            "breedte": 1104,
+                            "hoogte": 300
+                        }
+                    },
+                    {
+                        "afbeelding": {
+                            "url": "https://vt.ns-mlab.nl/v1/images/ddz_6/ddz_6_3.png",
+                            "breedte": 1104,
+                            "hoogte": 300
+                        }
+                    },
+                    {
+                        "afbeelding": {
+                            "url": "https://vt.ns-mlab.nl/v1/images/ddz_6/ddz_6_4.png",
+                            "breedte": 1104,
+                            "hoogte": 300
+                        }
+                    },
+                    {
+                        "afbeelding": {
+                            "url": "https://vt.ns-mlab.nl/v1/images/ddz_6/ddz_6_5.png",
+                            "breedte": 1104,
+                            "hoogte": 300
+                        }
+                    },
+                    {
+                        "afbeelding": {
+                            "url": "https://vt.ns-mlab.nl/v1/images/ddz_6/ddz_6_6.png",
+                            "breedte": 882,
+                            "hoogte": 300
+                        }
+                    }
+                ]
+            }
+        ],
+        "ingekort": false
+    },
+    "3672": {
+        "name": "NS  3672",
+        "depatureTime": "2022-04-09T19:50:00+0200",
+        "direction": "Zwolle",
+        "track": "3",
+        "trainCategory": "IC",
+        "trainNumber": "3672",
+        "classifiction": "LOW",
+        "materieel": [
+            {
+                "materieelnummer": 4215,
+                "type": "ICM 4",
+                "faciliteiten": [
+                    "WIFI",
+                    "TOILET",
+                    "STILTE",
+                    "STROOM",
+                    "FIETS"
+                ],
+                "afbeelding": "https://vt.ns-mlab.nl/v1/images/icm_4.png",
+                "breedte": 2209,
+                "hoogte": 150,
+                "bakken": [
+                    {
+                        "afbeelding": {
+                            "url": "https://vt.ns-mlab.nl/v1/images/icm_4/icm_4_1.png",
+                            "breedte": 1096,
+                            "hoogte": 300
+                        }
+                    },
+                    {
+                        "afbeelding": {
+                            "url": "https://vt.ns-mlab.nl/v1/images/icm_4/icm_4_2.png",
+                            "breedte": 1112,
+                            "hoogte": 300
+                        }
+                    },
+                    {
+                        "afbeelding": {
+                            "url": "https://vt.ns-mlab.nl/v1/images/icm_4/icm_4_3.png",
+                            "breedte": 1112,
+                            "hoogte": 300
+                        }
+                    },
+                    {
+                        "afbeelding": {
+                            "url": "https://vt.ns-mlab.nl/v1/images/icm_4/icm_4_4.png",
+                            "breedte": 1098,
+                            "hoogte": 300
+                        }
+                    }
+                ]
+            }
+        ],
+        "ingekort": false
+    },
+    "1168": {
+        "name": "NS  1168",
+        "depatureTime": "2022-04-09T19:53:00+0200",
+        "direction": "Amsterdam Centraal",
+        "track": "7",
+        "trainCategory": "ICD",
+        "trainNumber": "1168",
+        "classifiction": "LOW",
+        "materieel": [
+            {
+                "type": "ELOC TR25",
+                "faciliteiten": [],
+                "afbeelding": "https://vt.ns-mlab.nl/v1/images/e-loc_tr25.png",
+                "breedte": 386,
+                "hoogte": 150,
+                "bakken": []
+            },
+            {
+                "materieelnummer": 16115,
+                "type": "SW7-25KV_2+7",
+                "faciliteiten": [
+                    "TOILET",
+                    "STROOM"
+                ],
+                "afbeelding": "https://vt.ns-mlab.nl/v1/images/icr_7.png",
+                "breedte": 3855,
+                "hoogte": 150,
+                "bakken": [
+                    {
+                        "afbeelding": {
+                            "url": "https://vt.ns-mlab.nl/v1/images/icr_7/icr_7_1.png",
+                            "breedte": 1100,
+                            "hoogte": 300
+                        }
+                    },
+                    {
+                        "afbeelding": {
+                            "url": "https://vt.ns-mlab.nl/v1/images/icr_7/icr_7_2.png",
+                            "breedte": 1106,
+                            "hoogte": 300
+                        }
+                    },
+                    {
+                        "afbeelding": {
+                            "url": "https://vt.ns-mlab.nl/v1/images/icr_7/icr_7_3.png",
+                            "breedte": 1104,
+                            "hoogte": 300
+                        }
+                    },
+                    {
+                        "afbeelding": {
+                            "url": "https://vt.ns-mlab.nl/v1/images/icr_7/icr_7_4.png",
+                            "breedte": 1104,
+                            "hoogte": 300
+                        }
+                    },
+                    {
+                        "afbeelding": {
+                            "url": "https://vt.ns-mlab.nl/v1/images/icr_7/icr_7_5.png",
+                            "breedte": 1106,
+                            "hoogte": 300
+                        }
+                    },
+                    {
+                        "afbeelding": {
+                            "url": "https://vt.ns-mlab.nl/v1/images/icr_7/icr_7_6.png",
+                            "breedte": 1104,
+                            "hoogte": 300
+                        }
+                    },
+                    {
+                        "afbeelding": {
+                            "url": "https://vt.ns-mlab.nl/v1/images/icr_7/icr_7_7.png",
+                            "breedte": 1086,
+                            "hoogte": 300
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "ELOC TR25",
+                "faciliteiten": [],
+                "afbeelding": "https://vt.ns-mlab.nl/v1/images/e-loc_tr25.png",
+                "breedte": 386,
+                "hoogte": 150,
+                "bakken": []
+            }
+        ],
+        "ingekort": false
+    },
+    "6670": {
+        "name": "NS  6670",
+        "depatureTime": "2022-04-09T19:53:00+0200",
+        "direction": "Nijmegen",
+        "track": "5",
+        "trainCategory": "SPR",
+        "trainNumber": "6670",
+        "classifiction": "LOW",
+        "materieel": [
+            {
+                "materieelnummer": 2208,
+                "type": "Flirt 3 FFF",
+                "faciliteiten": [
+                    "TOILET",
+                    "STROOM",
+                    "FIETS",
+                    "WIFI"
+                ],
+                "afbeelding": "https://vt.ns-mlab.nl/v1/images/nsr_flirt_3.png",
+                "breedte": 1378,
+                "hoogte": 150,
+                "bakken": [
+                    {
+                        "afbeelding": {
+                            "url": "https://vt.ns-mlab.nl/v1/images/nsr_flirt_3/nsr_flirt_3_1.png",
+                            "breedte": 990,
+                            "hoogte": 300
+                        }
+                    },
+                    {
+                        "afbeelding": {
+                            "url": "https://vt.ns-mlab.nl/v1/images/nsr_flirt_3/nsr_flirt_3_2.png",
+                            "breedte": 766,
+                            "hoogte": 300
+                        }
+                    },
+                    {
+                        "afbeelding": {
+                            "url": "https://vt.ns-mlab.nl/v1/images/nsr_flirt_3/nsr_flirt_3_3.png",
+                            "breedte": 990,
+                            "hoogte": 300
+                        }
+                    }
+                ]
+            }
+        ],
+        "ingekort": false
+    },
+    "1173": {
+        "name": "NS  1173",
+        "depatureTime": "2022-04-09T20:08:00+0200",
+        "direction": "Eindhoven Centraal",
+        "track": "3",
+        "trainCategory": "ICD",
+        "trainNumber": "1173",
+        "classifiction": "LOW",
+        "materieel": [
+            {
+                "type": "ELOC TR25",
+                "faciliteiten": [],
+                "afbeelding": "https://vt.ns-mlab.nl/v1/images/e-loc_tr25.png",
+                "breedte": 386,
+                "hoogte": 150,
+                "bakken": []
+            },
+            {
+                "materieelnummer": 16235,
+                "type": "SW9_25KV 2+9",
+                "faciliteiten": [
+                    "TOILET",
+                    "STROOM"
+                ],
+                "afbeelding": "https://vt.ns-mlab.nl/v1/images/icr_9.png",
+                "breedte": 4957,
+                "hoogte": 150,
+                "bakken": [
+                    {
+                        "afbeelding": {
+                            "url": "https://vt.ns-mlab.nl/v1/images/icr_9/icr_9_1.png",
+                            "breedte": 1104,
+                            "hoogte": 300
+                        }
+                    },
+                    {
+                        "afbeelding": {
+                            "url": "https://vt.ns-mlab.nl/v1/images/icr_9/icr_9_2.png",
+                            "breedte": 1104,
+                            "hoogte": 300
+                        }
+                    },
+                    {
+                        "afbeelding": {
+                            "url": "https://vt.ns-mlab.nl/v1/images/icr_9/icr_9_3.png",
+                            "breedte": 1102,
+                            "hoogte": 300
+                        }
+                    },
+                    {
+                        "afbeelding": {
+                            "url": "https://vt.ns-mlab.nl/v1/images/icr_9/icr_9_4.png",
+                            "breedte": 1104,
+                            "hoogte": 300
+                        }
+                    },
+                    {
+                        "afbeelding": {
+                            "url": "https://vt.ns-mlab.nl/v1/images/icr_9/icr_9_5.png",
+                            "breedte": 1104,
+                            "hoogte": 300
+                        }
+                    },
+                    {
+                        "afbeelding": {
+                            "url": "https://vt.ns-mlab.nl/v1/images/icr_9/icr_9_6.png",
+                            "breedte": 1104,
+                            "hoogte": 300
+                        }
+                    },
+                    {
+                        "afbeelding": {
+                            "url": "https://vt.ns-mlab.nl/v1/images/icr_9/icr_9_7.png",
+                            "breedte": 1102,
+                            "hoogte": 300
+                        }
+                    },
+                    {
+                        "afbeelding": {
+                            "url": "https://vt.ns-mlab.nl/v1/images/icr_9/icr_9_8.png",
+                            "breedte": 1104,
+                            "hoogte": 300
+                        }
+                    },
+                    {
+                        "afbeelding": {
+                            "url": "https://vt.ns-mlab.nl/v1/images/icr_9/icr_9_9.png",
+                            "breedte": 1086,
+                            "hoogte": 300
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "ELOC TR25",
+                "faciliteiten": [],
+                "afbeelding": "https://vt.ns-mlab.nl/v1/images/e-loc_tr25.png",
+                "breedte": 386,
+                "hoogte": 150,
+                "bakken": []
+            }
+        ],
+        "ingekort": false
+    },
+    "306669": {
+        "name": "NS306669",
+        "depatureTime": "2022-04-09T20:09:00+0200",
+        "direction": "Dordrecht",
+        "track": "7",
+        "trainCategory": "SPR",
+        "trainNumber": "306669",
+        "classifiction": "UNKNOWN",
+        "materieel": "UNKNOWN",
+        "ingekort": "UNKNOWN"
+    },
+    "3669": {
+        "name": "NS  3669",
+        "depatureTime": "2022-04-09T20:15:00+0200",
+        "direction": "Roosendaal",
+        "track": "8",
+        "trainCategory": "IC",
+        "trainNumber": "3669",
+        "classifiction": "LOW",
+        "materieel": [
+            {
+                "materieelnummer": 7527,
+                "type": "DDZ 4",
+                "faciliteiten": [
+                    "WIFI",
+                    "TOILET",
+                    "STILTE",
+                    "STROOM",
+                    "FIETS"
+                ],
+                "afbeelding": "https://vt.ns-mlab.nl/v1/images/ddz_4.png",
+                "breedte": 2095,
+                "hoogte": 150,
+                "bakken": [
+                    {
+                        "afbeelding": {
+                            "url": "https://vt.ns-mlab.nl/v1/images/ddz_4/ddz_4_1.png",
+                            "breedte": 1098,
+                            "hoogte": 300
+                        }
+                    },
+                    {
+                        "afbeelding": {
+                            "url": "https://vt.ns-mlab.nl/v1/images/ddz_4/ddz_4_2.png",
+                            "breedte": 1104,
+                            "hoogte": 300
+                        }
+                    },
+                    {
+                        "afbeelding": {
+                            "url": "https://vt.ns-mlab.nl/v1/images/ddz_4/ddz_4_3.png",
+                            "breedte": 1104,
+                            "hoogte": 300
+                        }
+                    },
+                    {
+                        "afbeelding": {
+                            "url": "https://vt.ns-mlab.nl/v1/images/ddz_4/ddz_4_4.png",
+                            "breedte": 884,
+                            "hoogte": 300
+                        }
+                    }
+                ]
+            }
+        ],
+        "ingekort": false
+    },
+    "3674": {
+        "name": "NS  3674",
+        "depatureTime": "2022-04-09T20:20:00+0200",
+        "direction": "Zwolle",
+        "track": "3",
+        "trainCategory": "IC",
+        "trainNumber": "3674",
+        "classifiction": "LOW",
+        "materieel": [
+            {
+                "materieelnummer": 0,
+                "type": "",
+                "faciliteiten": [],
+                "bakken": []
+            }
+        ],
+        "ingekort": false
+    },
+    "1170": {
+        "name": "NS  1170",
+        "depatureTime": "2022-04-09T20:23:00+0200",
+        "direction": "Amsterdam Centraal",
+        "track": "7",
+        "trainCategory": "ICD",
+        "trainNumber": "1170",
+        "classifiction": "LOW",
+        "materieel": [
+            {
+                "type": "ELOC TR25",
+                "faciliteiten": [],
+                "afbeelding": "https://vt.ns-mlab.nl/v1/images/e-loc_tr25.png",
+                "breedte": 386,
+                "hoogte": 150,
+                "bakken": []
+            },
+            {
+                "materieelnummer": 16501,
+                "type": "SW9_25KV 2+9",
+                "faciliteiten": [
+                    "TOILET",
+                    "STROOM"
+                ],
+                "afbeelding": "https://vt.ns-mlab.nl/v1/images/icr_9.png",
+                "breedte": 4957,
+                "hoogte": 150,
+                "bakken": [
+                    {
+                        "afbeelding": {
+                            "url": "https://vt.ns-mlab.nl/v1/images/icr_9/icr_9_1.png",
+                            "breedte": 1104,
+                            "hoogte": 300
+                        }
+                    },
+                    {
+                        "afbeelding": {
+                            "url": "https://vt.ns-mlab.nl/v1/images/icr_9/icr_9_2.png",
+                            "breedte": 1104,
+                            "hoogte": 300
+                        }
+                    },
+                    {
+                        "afbeelding": {
+                            "url": "https://vt.ns-mlab.nl/v1/images/icr_9/icr_9_3.png",
+                            "breedte": 1102,
+                            "hoogte": 300
+                        }
+                    },
+                    {
+                        "afbeelding": {
+                            "url": "https://vt.ns-mlab.nl/v1/images/icr_9/icr_9_4.png",
+                            "breedte": 1104,
+                            "hoogte": 300
+                        }
+                    },
+                    {
+                        "afbeelding": {
+                            "url": "https://vt.ns-mlab.nl/v1/images/icr_9/icr_9_5.png",
+                            "breedte": 1104,
+                            "hoogte": 300
+                        }
+                    },
+                    {
+                        "afbeelding": {
+                            "url": "https://vt.ns-mlab.nl/v1/images/icr_9/icr_9_6.png",
+                            "breedte": 1104,
+                            "hoogte": 300
+                        }
+                    },
+                    {
+                        "afbeelding": {
+                            "url": "https://vt.ns-mlab.nl/v1/images/icr_9/icr_9_7.png",
+                            "breedte": 1102,
+                            "hoogte": 300
+                        }
+                    },
+                    {
+                        "afbeelding": {
+                            "url": "https://vt.ns-mlab.nl/v1/images/icr_9/icr_9_8.png",
+                            "breedte": 1104,
+                            "hoogte": 300
+                        }
+                    },
+                    {
+                        "afbeelding": {
+                            "url": "https://vt.ns-mlab.nl/v1/images/icr_9/icr_9_9.png",
+                            "breedte": 1086,
+                            "hoogte": 300
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "ELOC TR25",
+                "faciliteiten": [],
+                "afbeelding": "https://vt.ns-mlab.nl/v1/images/e-loc_tr25.png",
+                "breedte": 386,
+                "hoogte": 150,
+                "bakken": []
+            }
+        ],
+        "ingekort": false
+    },
+    "6672": {
+        "name": "NS  6672",
+        "depatureTime": "2022-04-09T20:23:00+0200",
+        "direction": "Nijmegen",
+        "track": "6",
+        "trainCategory": "SPR",
+        "trainNumber": "6672",
+        "classifiction": "LOW",
+        "materieel": [
+            {
+                "materieelnummer": 2510,
+                "type": "Flirt 4 FFF",
+                "faciliteiten": [
+                    "TOILET",
+                    "STROOM",
+                    "FIETS",
+                    "WIFI"
+                ],
+                "afbeelding": "https://vt.ns-mlab.nl/v1/images/nsr_flirt_4.png",
+                "breedte": 1759,
+                "hoogte": 150,
+                "bakken": [
+                    {
+                        "afbeelding": {
+                            "url": "https://vt.ns-mlab.nl/v1/images/nsr_flirt_4/nsr_flirt_4_1.png",
+                            "breedte": 988,
+                            "hoogte": 300
+                        }
+                    },
+                    {
+                        "afbeelding": {
+                            "url": "https://vt.ns-mlab.nl/v1/images/nsr_flirt_4/nsr_flirt_4_2.png",
+                            "breedte": 768,
+                            "hoogte": 300
+                        }
+                    },
+                    {
+                        "afbeelding": {
+                            "url": "https://vt.ns-mlab.nl/v1/images/nsr_flirt_4/nsr_flirt_4_3.png",
+                            "breedte": 768,
+                            "hoogte": 300
+                        }
+                    },
+                    {
+                        "afbeelding": {
+                            "url": "https://vt.ns-mlab.nl/v1/images/nsr_flirt_4/nsr_flirt_4_4.png",
+                            "breedte": 990,
+                            "hoogte": 300
+                        }
+                    }
+                ]
+            }
+        ],
+        "ingekort": false
+    },
+    "9263": {
+        "name": "NS Int  9263",
+        "depatureTime": "2022-04-09T20:26:00+0200",
+        "direction": "Amsterdam Centraal",
+        "track": "5",
+        "trainCategory": "ICD",
+        "trainNumber": "9263",
+        "classifiction": "UNKNOWN",
+        "materieel": [
+            {
+                "type": "ELOC TR25",
+                "faciliteiten": [],
+                "afbeelding": "https://vt.ns-mlab.nl/v1/images/e-loc_tr25.png",
+                "breedte": 386,
+                "hoogte": 150,
+                "bakken": []
+            },
+            {
+                "materieelnummer": 16475,
+                "type": "SW7-25KV_2+7",
+                "faciliteiten": [
+                    "TOILET",
+                    "STROOM"
+                ],
+                "afbeelding": "https://vt.ns-mlab.nl/v1/images/icr_7.png",
+                "breedte": 3855,
+                "hoogte": 150,
+                "bakken": [
+                    {
+                        "afbeelding": {
+                            "url": "https://vt.ns-mlab.nl/v1/images/icr_7/icr_7_1.png",
+                            "breedte": 1100,
+                            "hoogte": 300
+                        }
+                    },
+                    {
+                        "afbeelding": {
+                            "url": "https://vt.ns-mlab.nl/v1/images/icr_7/icr_7_2.png",
+                            "breedte": 1106,
+                            "hoogte": 300
+                        }
+                    },
+                    {
+                        "afbeelding": {
+                            "url": "https://vt.ns-mlab.nl/v1/images/icr_7/icr_7_3.png",
+                            "breedte": 1104,
+                            "hoogte": 300
+                        }
+                    },
+                    {
+                        "afbeelding": {
+                            "url": "https://vt.ns-mlab.nl/v1/images/icr_7/icr_7_4.png",
+                            "breedte": 1104,
+                            "hoogte": 300
+                        }
+                    },
+                    {
+                        "afbeelding": {
+                            "url": "https://vt.ns-mlab.nl/v1/images/icr_7/icr_7_5.png",
+                            "breedte": 1106,
+                            "hoogte": 300
+                        }
+                    },
+                    {
+                        "afbeelding": {
+                            "url": "https://vt.ns-mlab.nl/v1/images/icr_7/icr_7_6.png",
+                            "breedte": 1104,
+                            "hoogte": 300
+                        }
+                    },
+                    {
+                        "afbeelding": {
+                            "url": "https://vt.ns-mlab.nl/v1/images/icr_7/icr_7_7.png",
+                            "breedte": 1086,
+                            "hoogte": 300
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "ELOC TR25",
+                "faciliteiten": [],
+                "afbeelding": "https://vt.ns-mlab.nl/v1/images/e-loc_tr25.png",
+                "breedte": 386,
+                "hoogte": 150,
+                "bakken": []
+            }
+        ],
+        "ingekort": false
+    },
+    "1175": {
+        "name": "NS  1175",
+        "depatureTime": "2022-04-09T20:38:00+0200",
+        "direction": "Eindhoven Centraal",
+        "track": "3",
+        "trainCategory": "ICD",
+        "trainNumber": "1175",
+        "classifiction": "LOW",
+        "materieel": [
+            {
+                "type": "ELOC TR25",
+                "faciliteiten": [],
+                "afbeelding": "https://vt.ns-mlab.nl/v1/images/e-loc_tr25.png",
+                "breedte": 386,
+                "hoogte": 150,
+                "bakken": []
+            },
+            {
+                "materieelnummer": 16122,
+                "type": "SW7-25KV_2+7",
+                "faciliteiten": [
+                    "TOILET",
+                    "STROOM"
+                ],
+                "afbeelding": "https://vt.ns-mlab.nl/v1/images/icr_7.png",
+                "breedte": 3855,
+                "hoogte": 150,
+                "bakken": [
+                    {
+                        "afbeelding": {
+                            "url": "https://vt.ns-mlab.nl/v1/images/icr_7/icr_7_1.png",
+                            "breedte": 1100,
+                            "hoogte": 300
+                        }
+                    },
+                    {
+                        "afbeelding": {
+                            "url": "https://vt.ns-mlab.nl/v1/images/icr_7/icr_7_2.png",
+                            "breedte": 1106,
+                            "hoogte": 300
+                        }
+                    },
+                    {
+                        "afbeelding": {
+                            "url": "https://vt.ns-mlab.nl/v1/images/icr_7/icr_7_3.png",
+                            "breedte": 1104,
+                            "hoogte": 300
+                        }
+                    },
+                    {
+                        "afbeelding": {
+                            "url": "https://vt.ns-mlab.nl/v1/images/icr_7/icr_7_4.png",
+                            "breedte": 1104,
+                            "hoogte": 300
+                        }
+                    },
+                    {
+                        "afbeelding": {
+                            "url": "https://vt.ns-mlab.nl/v1/images/icr_7/icr_7_5.png",
+                            "breedte": 1106,
+                            "hoogte": 300
+                        }
+                    },
+                    {
+                        "afbeelding": {
+                            "url": "https://vt.ns-mlab.nl/v1/images/icr_7/icr_7_6.png",
+                            "breedte": 1104,
+                            "hoogte": 300
+                        }
+                    },
+                    {
+                        "afbeelding": {
+                            "url": "https://vt.ns-mlab.nl/v1/images/icr_7/icr_7_7.png",
+                            "breedte": 1086,
+                            "hoogte": 300
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "ELOC TR25",
+                "faciliteiten": [],
+                "afbeelding": "https://vt.ns-mlab.nl/v1/images/e-loc_tr25.png",
+                "breedte": 386,
+                "hoogte": 150,
+                "bakken": []
+            }
+        ],
+        "ingekort": false
+    },
+    "6671": {
+        "name": "NS  6671",
+        "depatureTime": "2022-04-09T20:39:00+0200",
+        "direction": "Dordrecht",
+        "track": "6",
+        "trainCategory": "SPR",
+        "trainNumber": "6671",
+        "classifiction": "LOW",
+        "materieel": [
+            {
+                "materieelnummer": 2503,
+                "type": "Flirt 4 FFF",
+                "faciliteiten": [
+                    "TOILET",
+                    "STROOM",
+                    "FIETS",
+                    "WIFI"
+                ],
+                "afbeelding": "https://vt.ns-mlab.nl/v1/images/nsr_flirt_4.png",
+                "breedte": 1759,
+                "hoogte": 150,
+                "bakken": [
+                    {
+                        "afbeelding": {
+                            "url": "https://vt.ns-mlab.nl/v1/images/nsr_flirt_4/nsr_flirt_4_1.png",
+                            "breedte": 988,
+                            "hoogte": 300
+                        }
+                    },
+                    {
+                        "afbeelding": {
+                            "url": "https://vt.ns-mlab.nl/v1/images/nsr_flirt_4/nsr_flirt_4_2.png",
+                            "breedte": 768,
+                            "hoogte": 300
+                        }
+                    },
+                    {
+                        "afbeelding": {
+                            "url": "https://vt.ns-mlab.nl/v1/images/nsr_flirt_4/nsr_flirt_4_3.png",
+                            "breedte": 768,
+                            "hoogte": 300
+                        }
+                    },
+                    {
+                        "afbeelding": {
+                            "url": "https://vt.ns-mlab.nl/v1/images/nsr_flirt_4/nsr_flirt_4_4.png",
+                            "breedte": 990,
+                            "hoogte": 300
+                        }
+                    }
+                ]
+            }
+        ],
+        "ingekort": false
+    },
+    "9264": {
+        "name": "NS Int  9264",
+        "depatureTime": "2022-04-09T20:42:00+0200",
+        "direction": "Brussel-Zuid Midi",
+        "track": "7",
+        "trainCategory": "ICD",
+        "trainNumber": "9264",
+        "classifiction": "UNKNOWN",
+        "materieel": [
+            {
+                "type": "ELOC TR25",
+                "faciliteiten": [],
+                "afbeelding": "https://vt.ns-mlab.nl/v1/images/e-loc_tr25.png",
+                "breedte": 386,
+                "hoogte": 150,
+                "bakken": []
+            },
+            {
+                "materieelnummer": 16273,
+                "type": "SW7-25KV_2+7",
+                "faciliteiten": [
+                    "TOILET",
+                    "STROOM"
+                ],
+                "afbeelding": "https://vt.ns-mlab.nl/v1/images/icr_7.png",
+                "breedte": 3855,
+                "hoogte": 150,
+                "bakken": [
+                    {
+                        "afbeelding": {
+                            "url": "https://vt.ns-mlab.nl/v1/images/icr_7/icr_7_1.png",
+                            "breedte": 1100,
+                            "hoogte": 300
+                        }
+                    },
+                    {
+                        "afbeelding": {
+                            "url": "https://vt.ns-mlab.nl/v1/images/icr_7/icr_7_2.png",
+                            "breedte": 1106,
+                            "hoogte": 300
+                        }
+                    },
+                    {
+                        "afbeelding": {
+                            "url": "https://vt.ns-mlab.nl/v1/images/icr_7/icr_7_3.png",
+                            "breedte": 1104,
+                            "hoogte": 300
+                        }
+                    },
+                    {
+                        "afbeelding": {
+                            "url": "https://vt.ns-mlab.nl/v1/images/icr_7/icr_7_4.png",
+                            "breedte": 1104,
+                            "hoogte": 300
+                        }
+                    },
+                    {
+                        "afbeelding": {
+                            "url": "https://vt.ns-mlab.nl/v1/images/icr_7/icr_7_5.png",
+                            "breedte": 1106,
+                            "hoogte": 300
+                        }
+                    },
+                    {
+                        "afbeelding": {
+                            "url": "https://vt.ns-mlab.nl/v1/images/icr_7/icr_7_6.png",
+                            "breedte": 1104,
+                            "hoogte": 300
+                        }
+                    },
+                    {
+                        "afbeelding": {
+                            "url": "https://vt.ns-mlab.nl/v1/images/icr_7/icr_7_7.png",
+                            "breedte": 1086,
+                            "hoogte": 300
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "ELOC TR25",
+                "faciliteiten": [],
+                "afbeelding": "https://vt.ns-mlab.nl/v1/images/e-loc_tr25.png",
+                "breedte": 386,
+                "hoogte": 150,
+                "bakken": []
+            }
+        ],
+        "ingekort": false
+    }
+}
