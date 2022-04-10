@@ -14,14 +14,14 @@ class ApiConnections:
             }
         )
 
-    def get_depatures(self, station_code: str) -> dict:
+    def get_departures(self, station_code: str) -> dict:
         req = self.httpPool.request(
             "GET",
             f"{self.prefix_url}reisinformatie-api/api/v2/departures?station={station_code}",
         )
-        depatures = json.loads(req.data.decode("utf-8"))
+        departures = json.loads(req.data.decode("utf-8"))
         self.station_code = station_code
-        return depatures
+        return departures
 
     def get_crowdedness(self, trainnumbers: List[str]) -> dict:
         crowdedness = {}

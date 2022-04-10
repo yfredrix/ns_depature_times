@@ -3,18 +3,18 @@ import pytz
 import math
 
 
-class Depatures:
+class Departures:
     def __init__(self) -> None:
         pass
 
-    def parse_depatures(self, depatures):
+    def parse_departures(self, departures):
         """
-        Parse the depatures from the API respones;
+        Parse the departures from the API respones;
         Change the structure to having a dictionary keyed at the trainnumbers, containing the depature time, track and traincategory.
         """
-        parsed_depatures = {}
-        for depature in depatures["payload"]["departures"]:
-            parsed_depatures[depature["product"]["number"]] = {
+        parsed_departures = {}
+        for depature in departures["payload"]["departures"]:
+            parsed_departures[depature["product"]["number"]] = {
                 "name": depature["name"],
                 "actualDateTime": datetime.strptime(
                     depature["actualDateTime"], "%Y-%m-%dT%H:%M:%S%z"
@@ -32,27 +32,27 @@ class Depatures:
                 "trainCategory": depature["trainCategory"],
                 "trainNumber": depature["product"]["number"],
             }
-            parsed_depatures[depature["product"]["number"]]["delay"] = math.ceil(
+            parsed_departures[depature["product"]["number"]]["delay"] = math.ceil(
                 (
-                    parsed_depatures[depature["product"]["number"]]["actualDateTime"]
-                    - parsed_depatures[depature["product"]["number"]]["plannedDateTime"]
+                    parsed_departures[depature["product"]["number"]]["actualDateTime"]
+                    - parsed_departures[depature["product"]["number"]]["plannedDateTime"]
                 ).total_seconds()
                 / 60
             )
-            parsed_depatures[depature["product"]["number"]][
+            parsed_departures[depature["product"]["number"]][
                 "timeBeforeLeave"
             ] = math.floor(
                 (
-                    parsed_depatures[depature["product"]["number"]]["actualDateTime"]
+                    parsed_departures[depature["product"]["number"]]["actualDateTime"]
                     - datetime.now(tz=pytz.timezone("Europe/Amsterdam"))
                 ).total_seconds()
                 / 60
             )
-        self.depatures = parsed_depatures
+        self.departures = parsed_departures
 
-    def update_depatures(self, updates):
-        for trainnumber in self.depatures.keys():
-            self.depatures[trainnumber] = {
-                **self.depatures[trainnumber],
+    def update_departures(self, updates):
+        for trainnumber in self.departures.keys():
+            self.departures[trainnumber] = {
+                **self.departures[trainnumber],
                 **updates[trainnumber],
             }
