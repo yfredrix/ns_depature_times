@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "nsdepaturetimes"
+name = "nsdeparturetimes"
 version = "0.1.0"
 description = "A dash webapp to show the actual depature times of trains and crowdedness in the Netherlands"
 authors = ["Yorick Fredrix <yorick.fredrix@outlook.com>"]

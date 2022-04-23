@@ -55,9 +55,20 @@ class ApiConnections:
                 for payload in payloads:
                     trains[trainnumber] = {
                         "materieel": payload["materieeldelen"],
-                        "ingekort": payload['ingekort'],
+                        "ingekort": payload["ingekort"],
                     }
             if "materieel" not in trains[trainnumber].keys():
                 trains[trainnumber]["materieel"] = "UNKNOWN"
                 trains[trainnumber]["ingekort"] = "UNKNOWN"
         return trains
+
+    def get_station(self, station_code: str) -> dict:
+        req = self.httpPool.request(
+            "GET",
+            f"{self.prefix_url}reisinformatie-api/api/v2/stations",
+        )
+        payload = json.loads(req.data.decode("utf-8"))["payload"]
+        for station_dict in payload:
+            if station_dict["code"] == station_code:
+                return station_dict
+        return {"code": station_code, "namen": {"middel": "station not found"}}
