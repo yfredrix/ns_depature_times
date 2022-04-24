@@ -45,6 +45,7 @@ class ApiConnections:
     def get_trains(self, trainnumbers: List[str]) -> dict:
         trains = {}
         for trainnumber in trainnumbers:
+            invalid_material = False
             trains[trainnumber] = {}
             req = self.httpPool.request(
                 "GET",
@@ -53,12 +54,24 @@ class ApiConnections:
             payloads = json.loads(req.data.decode("utf-8"))
             if isinstance(payloads, list):
                 for payload in payloads:
-                    trains[trainnumber] = {
-                        "materieel": payload["materieeldelen"],
-                        "ingekort": payload["ingekort"],
-                    }
+                    for part in payload["materieeldelen"]:
+                        if part["type"] != "":
+                            continue
+                        else:
+                            invalid_material = True
+                            break
+                    if not invalid_material:
+                        trains[trainnumber] = {
+                            "materieel": payload["materieeldelen"],
+                            "ingekort": payload["ingekort"],
+                        }
+                    else:
+                        trains[trainnumber] = {
+                            "materieel": [],
+                            "ingekort": "UNKNOWN",
+                        }
             if "materieel" not in trains[trainnumber].keys():
-                trains[trainnumber]["materieel"] = "UNKNOWN"
+                trains[trainnumber]["materieel"] = []
                 trains[trainnumber]["ingekort"] = "UNKNOWN"
         return trains
 
