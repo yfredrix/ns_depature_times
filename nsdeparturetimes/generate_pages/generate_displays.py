@@ -1,7 +1,7 @@
 import os
 
-from app import app
 from dash import html
+from app import app
 from datacollection import ApiConnections, Departures
 
 STATION_CODE = os.getenv("STATION_CODE")
@@ -48,7 +48,10 @@ def generate_html_departure_display(departures: dict) -> list:
     new_layout = []
     for train, data in departures.items():
         if data["timeBeforeLeave"] >= MINIMUM_DEPATURE_TIME:
-            if len(data["materieel"]) > 0 and "afbeelding" in data["materieel"][0].keys():
+            if (
+                len(data["materieel"]) > 0
+                and "afbeelding" in data["materieel"][0].keys()
+            ):
                 total_width = 0
                 for materieel in data["materieel"]:
                     total_width += materieel["breedte"]
@@ -141,7 +144,15 @@ def generate_html_departure_display(departures: dict) -> list:
                                                     f'{data["classifiction"]}.svg'
                                                 )
                                             ),
-                                        ),
+                                        )
+                                        if "classifiction" in data.keys()
+                                        else "",
+                                        html.Div(
+                                            className="delay",
+                                            children=f"+ {data['delay']} min",
+                                        )
+                                        if data["delay"] > 0
+                                        else "",
                                     ],
                                 )
                             ],

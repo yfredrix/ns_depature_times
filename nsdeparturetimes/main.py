@@ -1,15 +1,14 @@
 from datetime import datetime
 
 import pytz
-from dash import Input, Output, State, dcc, html, ALL, callback_context
+from dash import ALL, Input, Output, State, callback_context, dcc, html
 
 from app import app, server
 from generate_pages import departures, generate_layout
 
-
 app.layout = html.Div(
     children=[
-        dcc.Interval(id="data_refresh", interval=30000, n_intervals=0),
+        dcc.Interval(id="data_refresh", interval=60000, n_intervals=0),
         dcc.Interval(id="style_updates", interval=5000, n_intervals=0),
         html.Div(
             children=[
@@ -48,6 +47,7 @@ def update_layout(n_intervals: int) -> list:
     layout = generate_layout()
     return layout
 
+
 @app.callback(
     Output({"category": "via", "trainNumber": ALL, "type": "switching"}, "hidden"),
     Output({"category": "remark", "trainNumber": ALL, "type": "switching"}, "hidden"),
@@ -59,9 +59,17 @@ def switch_style(n_intervals):
     given_outputs = callback_context.outputs_list
     if len(given_outputs[0]) == len(given_outputs[1]):
         if n_intervals % 2 == 0:
-            return len(given_outputs[0]) * [False], len(given_outputs[1]) * [True], clock_time
+            return (
+                len(given_outputs[0]) * [False],
+                len(given_outputs[1]) * [True],
+                clock_time,
+            )
         else:
-            return len(given_outputs[0]) * [True], len(given_outputs[1]) * [False], clock_time
+            return (
+                len(given_outputs[0]) * [True],
+                len(given_outputs[1]) * [False],
+                clock_time,
+            )
 
 
 if __name__ == "__main__":
