@@ -24,7 +24,7 @@ h1 {
 
 #departures-header.style-tb .clock,
 #departures-header.style-tb .station {
-    padding: 1px 10px;
+    padding: 1px 2px;
     display: inline-block;
     letter-spacing: 0.5px;
 }
@@ -32,7 +32,7 @@ h1 {
 #departures-header.style-tb .clock img {
     height: 10px;
     padding-right: 5px;
-    vertical-align: text-top;
+    vertical-align: baseline;
 }
 
 #departures-main.style-tb {
@@ -41,7 +41,7 @@ h1 {
 
 #departures-main.style-tb #departures-header-row,
 #departures-main.style-tb .row {
-    padding: 0 20px 0 20px;
+    padding: 0 5px 0 5px;
 }
 
 #departures-main.style-tb .column {
@@ -51,7 +51,7 @@ h1 {
 
 #departures-main.style-tb .column.time {
     min-width: 45px;
-    text-align: center;
+    text-align: left;
 }
 
 #departures-main.style-tb .column.destination {
@@ -76,7 +76,7 @@ h1 {
     background-color: #d5e5ff;
     color: #009;
     font-size: 8px;
-    min-height: 15px;
+    height: 20px;
 }
 
 #departures-main.style-tb #departures-header-row .column {
@@ -119,7 +119,7 @@ h1 {
 }
 
 #departures-main.style-tb .row .train-id {
-    font-size: 22px;
+    font-size: 14px;
 }
 
 #departures-main.style-tb .row .platform-indicator {
@@ -172,6 +172,7 @@ h1 {
 #departures-main.style-tb .row .tips,
 #departures-main.style-tb .row .via {
     margin-top: 4px;
+    font-size: 12px;
     margin-bottom: 4px;
 }
 

@@ -42,27 +42,26 @@ app.layout = html.Div(
 
 @app.callback(
     Output("page_contents", "children"),
-    Output("clocktime", "children"),
     Input("data_refresh", "n_intervals"),
 )
 def update_layout(n_intervals: int) -> list:
-    return generate_layout(), datetime.now(
-        tz=pytz.timezone("Europe/Amsterdam")
-    ).strftime("%H:%M")
-
+    layout = generate_layout()
+    return layout
 
 @app.callback(
     Output({"category": "via", "trainNumber": ALL, "type": "switching"}, "hidden"),
     Output({"category": "remark", "trainNumber": ALL, "type": "switching"}, "hidden"),
+    Output("clocktime", "children"),
     Input("style_updates", "n_intervals"),
 )
 def switch_style(n_intervals):
+    clock_time = datetime.now(tz=pytz.timezone("Europe/Amsterdam")).strftime("%H:%M")
     given_outputs = callback_context.outputs_list
     if len(given_outputs[0]) == len(given_outputs[1]):
         if n_intervals % 2 == 0:
-            return len(given_outputs[0]) * [False], len(given_outputs[1]) * [True]
+            return len(given_outputs[0]) * [False], len(given_outputs[1]) * [True], clock_time
         else:
-            return len(given_outputs[0]) * [True], len(given_outputs[1]) * [False]
+            return len(given_outputs[0]) * [True], len(given_outputs[1]) * [False], clock_time
 
 
 if __name__ == "__main__":
