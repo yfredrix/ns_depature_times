@@ -143,12 +143,12 @@ h1 {
     width: 0;
 }
 
-#departures-main.style-tb .row .platform-indicator .platform-changed {
+#departures-main.style-tb .row .platform-indicator.platform-changed {
     color: #d50000;
     border-color: #d50000;
 }
 
-#departures-main.style-tb .row .platform-indicator .platform-changed:before {
+#departures-main.style-tb .row .platform-indicator.platform-changed:before {
     border-color: #d50000;
 }
 
