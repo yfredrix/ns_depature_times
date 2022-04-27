@@ -1,4 +1,4 @@
-from nsdeparturetimes.datacollection import Departures
+from ns_departure_times.datacollection import Departures
 from datetime import datetime, timezone, timedelta
 
 
