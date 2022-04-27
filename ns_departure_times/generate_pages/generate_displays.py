@@ -1,8 +1,8 @@
 import os
 
 from dash import html
-from app import app
-from datacollection import ApiConnections, Departures
+from ns_departure_times.datacollection import ApiConnections, Departures
+from ns_departure_times.app import app
 
 STATION_CODE = os.getenv("STATION_CODE")
 MINIMUM_DEPATURE_TIME = int(os.getenv("MINIMUM_DEPARTURE_TIME", "0"))

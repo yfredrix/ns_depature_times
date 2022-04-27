@@ -1,14 +1,26 @@
 FROM python:3.9-slim
 RUN python -m pip install poetry
 
-COPY nsdeparturetimes /app/nsdeparturetimes
+COPY ns_departure_times /app/ns_departure_times
 ADD poetry.lock /app/poetry.lock
 ADD pyproject.toml /app/pyproject.toml
 
 WORKDIR /app
 
-RUN poetry install --no-dev
+RUN poetry build
 
-EXPOSE 8000
+FROM python:3.9-slim
 
-# ENTRYPOINT ["poetry", "run", "gunicorn", "-w", "4" ,"nsdeparturetimes.main:server"]
+ARG USERNAME=dashboard
+ARG USER_UID=1000
+ARG USER_GID=$USER_UID
+
+RUN groupadd --gid $USER_GID $USERNAME \
+    && useradd --uid $USER_UID --gid $USER_GID -m $USERNAME
+
+COPY --from=0 /app/dist/*.whl /project/
+
+RUN python -m pip install --no-cache /project/*.whl
+USER $USERNAME
+EXPOSE 8050
+CMD ["/usr/local/bin/uvicorn", "--host", "0.0.0.0", "--interface", "wsgi", "--port", "8050", "ns_departure_times.main:app.server"]

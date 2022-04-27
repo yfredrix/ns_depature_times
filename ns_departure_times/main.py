@@ -3,8 +3,8 @@ from datetime import datetime
 import pytz
 from dash import ALL, Input, Output, State, callback_context, dcc, html
 
-from app import app, server
-from generate_pages import departures, generate_layout
+from ns_departure_times.app import app, server
+from ns_departure_times.generate_pages import departures, generate_layout
 
 app.layout = html.Div(
     children=[
