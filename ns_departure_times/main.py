@@ -70,7 +70,3 @@ def switch_style(n_intervals):
                 len(given_outputs[1]) * [False],
                 clock_time,
             )
-
-
-if __name__ == "__main__":
-    app.run_server(host="192.168.1.5", debug=True)
