@@ -10,7 +10,9 @@ connection = ApiConnections()
 
 station_info = connection.get_station(station_code=STATION_CODE)
 departures = Departures(
-    station_code=STATION_CODE, station_name=station_info["namen"]["middel"]
+    station_code=STATION_CODE,
+    station_name=station_info["namen"]["middel"],
+    station_uic_code=station_info["UICCode"],
 )
 
 
@@ -90,42 +92,50 @@ def generate_html_departure_display(departures: dict) -> list:
                                     ),
                                 ),
                                 html.Div(
-                                    id={
-                                        "trainNumber": train,
-                                        "type": "switching",
-                                        "category": "via",
-                                    }
-                                    if data["messages"]
-                                    else {
-                                        "trainNumber": train,
-                                        "type": "normal",
-                                        "category": "via",
-                                    },
+                                    id=(
+                                        {
+                                            "trainNumber": train,
+                                            "type": "switching",
+                                            "category": "via",
+                                        }
+                                        if data["messages"]
+                                        else {
+                                            "trainNumber": train,
+                                            "type": "normal",
+                                            "category": "via",
+                                        }
+                                    ),
                                     className="via",
-                                    children=f"via {', '.join(data['via'])}"
-                                    if len(data["via"]) > 0
-                                    else "",
+                                    children=(
+                                        f"via {', '.join(data['via'])}"
+                                        if len(data["via"]) > 0
+                                        else ""
+                                    ),
                                 ),
-                                html.Div(
-                                    id={
-                                        "trainNumber": train,
-                                        "type": "switching",
-                                        "category": "remark",
-                                    },
-                                    className="remarks",
-                                    children=data["messages"],
-                                )
-                                if data["messages"]
-                                else "",
+                                (
+                                    html.Div(
+                                        id={
+                                            "trainNumber": train,
+                                            "type": "switching",
+                                            "category": "remark",
+                                        },
+                                        className="remarks",
+                                        children=data["messages"],
+                                    )
+                                    if data["messages"]
+                                    else ""
+                                ),
                             ],
                         ),
                         html.Div(
                             className="column platform",
                             children=[
                                 html.Div(
-                                    className="platform-indicator platform-changed"
-                                    if data["changedPlatform"]
-                                    else "platform-indicator",
+                                    className=(
+                                        "platform-indicator platform-changed"
+                                        if data["changedPlatform"]
+                                        else "platform-indicator"
+                                    ),
                                     children=data["track"],
                                 )
                             ],
@@ -137,49 +147,55 @@ def generate_html_departure_display(departures: dict) -> list:
                                     className="train-id",
                                     children=[
                                         f"{data['trainCategory']} {train}",
-                                        html.Div(
-                                            className="crowdedness",
-                                            children=html.Img(
-                                                src=app.get_asset_url(
-                                                    f'{data["classifiction"]}.svg'
-                                                )
-                                            ),
-                                        )
-                                        if "classifiction" in data.keys()
-                                        else "",
-                                        html.Div(
-                                            className="delay",
-                                            children=f"+ {data['delay']} min",
-                                        )
-                                        if data["delay"] > 0
-                                        else "",
+                                        (
+                                            html.Div(
+                                                className="crowdedness",
+                                                children=html.Img(
+                                                    src=app.get_asset_url(
+                                                        f'{data["classification"]}.svg'
+                                                    )
+                                                ),
+                                            )
+                                            if "classification" in data.keys()
+                                            else ""
+                                        ),
+                                        (
+                                            html.Div(
+                                                className="delay",
+                                                children=f"+ {data['delay']} min",
+                                            )
+                                            if data["delay"] > 0
+                                            else ""
+                                        ),
                                     ],
                                 )
                             ],
                         ),
-                        html.Div(
-                            className="column material",
-                            children=[
-                                html.Span(
-                                    [
-                                        html.Span(
-                                            html.Img(
-                                                src=i["afbeelding"],
-                                                style={
-                                                    "maxWidth": f"{i['breedte']/total_width*100}%",
-                                                    "maxHeight": "100%",
-                                                },
+                        (
+                            html.Div(
+                                className="column material",
+                                children=[
+                                    html.Span(
+                                        [
+                                            html.Span(
+                                                html.Img(
+                                                    src=i["afbeelding"],
+                                                    style={
+                                                        "maxWidth": f"{i['breedte']/total_width*100}%",
+                                                        "maxHeight": "100%",
+                                                    },
+                                                )
                                             )
-                                        )
-                                        for i in data["materieel"]
-                                        if "afbeelding" in i.keys()
-                                    ]
-                                ),
-                            ],
-                        )
-                        if len(data["materieel"]) > 0
-                        and "afbeelding" in data["materieel"][0].keys()
-                        else "",
+                                            for i in data["materieel"]
+                                            if "afbeelding" in i.keys()
+                                        ]
+                                    ),
+                                ],
+                            )
+                            if len(data["materieel"]) > 0
+                            and "afbeelding" in data["materieel"][0].keys()
+                            else ""
+                        ),
                     ],
                 )
             ]

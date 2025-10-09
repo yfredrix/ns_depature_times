@@ -4,9 +4,12 @@ import math
 
 
 class Departures:
-    def __init__(self, station_code: str = "", station_name: str = "") -> None:
+    def __init__(
+        self, station_code: str = "", station_name: str = "", station_uic_code: int = 0
+    ) -> None:
         self.stationCode = station_code
         self.stationName = station_name
+        self.stationUicCode = station_uic_code
 
     def parse_departures(self, departures: dict):
         """
@@ -17,33 +20,39 @@ class Departures:
         for departure in departures["payload"]["departures"]:
             parsed_departures[departure["product"]["number"]] = {
                 "name": departure["name"],
-                "actualDateTime": datetime.strptime(
-                    departure["actualDateTime"], "%Y-%m-%dT%H:%M:%S%z"
-                )
-                if "actualDateTime" in departure.keys()
-                else None,
+                "actualDateTime": (
+                    datetime.strptime(
+                        departure["actualDateTime"], "%Y-%m-%dT%H:%M:%S%z"
+                    )
+                    if "actualDateTime" in departure.keys()
+                    else None
+                ),
                 "plannedDateTime": datetime.strptime(
                     departure["plannedDateTime"], "%Y-%m-%dT%H:%M:%S%z"
                 ),
                 "cancelled": departure["cancelled"],
                 "direction": departure["direction"],
-                "track": departure["actualTrack"]
-                if "actualTrack" in departure.keys()
-                else departure["plannedTrack"],
+                "track": (
+                    departure["actualTrack"]
+                    if "actualTrack" in departure.keys()
+                    else departure["plannedTrack"]
+                ),
                 "trainCategory": departure["trainCategory"],
                 "trainNumber": departure["product"]["number"],
-                "changedPlatform": False
-                if (
-                    "actualTrack" in departure.keys()
-                    and departure["actualTrack"] == departure["plannedTrack"]
-                )
-                or ("actualTrack" not in departure.keys())
-                else True,
+                "changedPlatform": (
+                    False
+                    if (
+                        "actualTrack" in departure.keys()
+                        and departure["actualTrack"] == departure["plannedTrack"]
+                    )
+                    or ("actualTrack" not in departure.keys())
+                    else True
+                ),
                 "via": [
                     departure["routeStations"][i]["mediumName"]
                     for i in range(len(departure["routeStations"]))
                 ],
-                "messages": [i['message'] for i in departure["messages"]],
+                "messages": [i["message"] for i in departure["messages"]],
             }
             parsed_departures[departure["product"]["number"]]["delay"] = math.ceil(
                 (
@@ -54,14 +63,16 @@ class Departures:
                 ).total_seconds()
                 / 60
             )
-            parsed_departures[departure["product"]["number"]][
-                "timeBeforeLeave"
-            ] = math.floor(
-                (
-                    parsed_departures[departure["product"]["number"]]["actualDateTime"]
-                    - datetime.now(tz=pytz.timezone("Europe/Amsterdam"))
-                ).total_seconds()
-                / 60
+            parsed_departures[departure["product"]["number"]]["timeBeforeLeave"] = (
+                math.floor(
+                    (
+                        parsed_departures[departure["product"]["number"]][
+                            "actualDateTime"
+                        ]
+                        - datetime.now(tz=pytz.timezone("Europe/Amsterdam"))
+                    ).total_seconds()
+                    / 60
+                )
             )
         self.departures = parsed_departures
 
