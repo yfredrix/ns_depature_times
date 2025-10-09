@@ -9,9 +9,7 @@ class ApiConnections:
 
     def __init__(self) -> None:
         self.httpPool = PoolManager(
-            headers={
-                "Ocp-Apim-Subscription-Key": os.environ.get("Ocp-Apim-Subscription-Key")
-            }
+            headers={"Ocp-Apim-Subscription-Key": os.getenv("SUBSCRIPTION_KEY")}
         )
 
     def get_departures(self, station_code: str) -> dict:
