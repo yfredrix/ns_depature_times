@@ -54,21 +54,20 @@ class Departures:
                 ],
                 "messages": [i["message"] for i in departure["messages"]],
             }
-            parsed_departures[departure["product"]["number"]]["delay"] = math.ceil(
-                (
-                    parsed_departures[departure["product"]["number"]]["actualDateTime"]
-                    - parsed_departures[departure["product"]["number"]][
-                        "plannedDateTime"
-                    ]
-                ).total_seconds()
-                / 60
+            actual_dt = parsed_departures[departure["product"]["number"]]["actualDateTime"]
+            planned_dt = parsed_departures[departure["product"]["number"]]["plannedDateTime"]
+            countdown_dt = actual_dt if actual_dt is not None else planned_dt
+            parsed_departures[departure["product"]["number"]]["delay"] = (
+                math.ceil(
+                    (actual_dt - planned_dt).total_seconds() / 60
+                )
+                if actual_dt is not None
+                else 0
             )
             parsed_departures[departure["product"]["number"]]["timeBeforeLeave"] = (
                 math.floor(
                     (
-                        parsed_departures[departure["product"]["number"]][
-                            "actualDateTime"
-                        ]
+                        countdown_dt
                         - datetime.now(tz=pytz.timezone("Europe/Amsterdam"))
                     ).total_seconds()
                     / 60
