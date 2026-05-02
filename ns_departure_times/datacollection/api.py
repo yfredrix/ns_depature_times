@@ -30,14 +30,14 @@ class ApiConnections:
                 f"{self.prefix_url}virtual-train-api/api/v1/prognose/{trainnumber}",
             )
             prognose = json.loads(req.data.decode("utf-8"))
-            if isinstance(prognose, list):
-                for stationprog in prognose:
-                    if stationprog["station"] == self.station_code:
-                        crowdedness[trainnumber]["classifiction"] = stationprog[
-                            "classifiction"
+            if isinstance(prognose["prognoses"], list):
+                for stationprog in prognose["prognoses"]:
+                    if stationprog["stationUic"] == self.stationUICode:
+                        crowdedness[trainnumber]["classification"] = stationprog[
+                            "classification"
                         ]
-            if "classifiction" not in crowdedness[trainnumber].keys():
-                crowdedness[trainnumber]["classifiction"] = "UNKNOWN"
+            if "classification" not in crowdedness[trainnumber].keys():
+                crowdedness[trainnumber]["classification"] = "UNKNOWN"
         return crowdedness
 
     def get_trains(self, trainnumbers: List[str]) -> dict:
@@ -80,6 +80,7 @@ class ApiConnections:
         )
         payload = json.loads(req.data.decode("utf-8"))["payload"]
         for station_dict in payload:
-            if station_dict["code"] == station_code:
+            if station_dict["code"].upper() == station_code.upper():
+                self.stationUICode = station_dict["UICCode"]
                 return station_dict
         return {"code": station_code, "namen": {"middel": "station not found"}}
